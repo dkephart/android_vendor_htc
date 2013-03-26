@@ -16,7 +16,7 @@
 
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES += \
-    vendor/htc/shooter/proprietary/camera.default.so:obj/lib/hw/camera.default.so \
+    vendor/htc/shooter/proprietary/camera.msm8660.so:obj/lib/hw/camera.msm8660.so \
     vendor/htc/shooter/proprietary/libaudioalsa.so:obj/lib/libaudioalsa.so \
     vendor/htc/shooter/proprietary/libacdbloader.so:obj/lib/libacdbloader.so \
     vendor/htc/shooter/proprietary/libacdbmapper.so:obj/lib/libacdbmapper.so
@@ -108,7 +108,11 @@ PRODUCT_COPY_FILES += \
     vendor/htc/shooter/proprietary/rmt_storage:/system/bin/rmt_storage \
     vendor/htc/shooter/proprietary/sound8x60:/system/bin/sound8x60 \
     vendor/htc/shooter/proprietary/3D_calibration:/system/bin/3D_calibration \
-    vendor/htc/shooter/proprietary/3D_calibration_main:/system/bin/3D_calibration_main
+    vendor/htc/shooter/proprietary/3D_calibration_main:/system/bin/3D_calibration_main \
+    vendor/htc/shooter/proprietary/camera.msm8660.so:system/lib/hw/camera.msm8660.so \
+    vendor/htc/shooter/proprietary/libcameraasd.so:system/lib/libcameraasd.so \
+    vendor/htc/shooter/proprietary/libcam_oem_plugin.so:system/lib/libcam_oem_plugin.so \
+    vendor/htc/shooter/proprietary/libcapsjava.so:system/lib/libcapsjava.so
 
 # All the blobs necessary for DRM
 PRODUCT_COPY_FILES +=  \
